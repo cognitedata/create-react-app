@@ -146,7 +146,7 @@ module.exports = {
               formatter: eslintFormatter,
               eslintPath: require.resolve('eslint'),
               baseConfig: {
-                extends: [require.resolve('eslint-config-react-app')],
+                extends: [require.resolve('@cognite/eslint-config')],
               },
               // @remove-on-eject-begin
               ignore: false,
