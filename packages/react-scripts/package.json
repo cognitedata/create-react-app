@@ -1,11 +1,14 @@
 {
   "name": "@cognite/react-scripts",
-  "version": "0.0.0",
+  "version": "1.2.0",
   "description": "Cognite fork of configuration and scripts for Create React App.",
   "repository": "https://github.com/cognitedata/create-react-app",
   "license": "MIT",
   "engines": {
     "node": ">=6"
+  },
+  "publishConfig": {
+	  "access": "public"
   },
   "bugs": {
     "url": "https://github.com/facebook/create-react-app/issues"
