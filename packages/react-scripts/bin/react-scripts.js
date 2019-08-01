@@ -61,5 +61,6 @@ switch (script) {
     console.log(
       'See: https://facebook.github.io/create-react-app/docs/updating-to-new-releases'
     );
+    process.exit(1);
     break;
 }
