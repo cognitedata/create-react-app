@@ -323,6 +323,7 @@ module.exports = function(webpackEnv) {
                   extends: [require.resolve('@cognite/eslint-config')],
                 },
                 ignore: false,
+                emitWarning: isEnvDevelopment,
                 useEslintrc: false,
                 // @remove-on-eject-end
               },
