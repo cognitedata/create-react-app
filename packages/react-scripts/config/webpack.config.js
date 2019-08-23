@@ -419,6 +419,7 @@ module.exports = function(webpackEnv) {
                       },
                     },
                   ],
+                  // enable better styled-components class names for development
                   !isEnvProduction &&
                     require.resolve('babel-plugin-styled-components'),
                 ].filter(Boolean),
