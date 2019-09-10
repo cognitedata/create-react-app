@@ -426,7 +426,10 @@ module.exports = function(webpackEnv) {
                       },
                     },
                   ],
-                ],
+                  // enable better styled-components class names for development
+                  !isEnvProduction &&
+                    require.resolve('babel-plugin-styled-components'),
+                ].filter(Boolean),
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
                 // directory for faster rebuilds.
