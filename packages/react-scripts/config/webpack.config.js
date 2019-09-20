@@ -336,6 +336,7 @@ module.exports = function(webpackEnv) {
           use: [
             {
               options: {
+                emitWarning: isEnvDevelopment, // Don't fail on eslint errors during development
                 formatter: require.resolve('react-dev-utils/eslintFormatter'),
                 eslintPath: require.resolve('eslint'),
                 resolvePluginsRelativeTo: __dirname,
