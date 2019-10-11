@@ -51,6 +51,8 @@ const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
 );
 
+const isCI = process.env.CI !== 'false';
+
 // Check if TypeScript is setup
 const useTypeScript = fs.existsSync(paths.appTsConfig);
 
@@ -699,7 +701,7 @@ module.exports = function(webpackEnv) {
           // The formatter is invoked directly in WebpackDevServerUtils during development
           formatter: isEnvProduction ? typescriptFormatter : undefined,
           // https://www.npmjs.com/package/fork-ts-checker-webpack-plugin#pre-computed-consts
-          workers: ForkTsCheckerWebpackPlugin.TWO_CPUS_FREE,
+          workers: isCI ? ForkTsCheckerWebpackPlugin.ONE_CPU_FREE : ForkTsCheckerWebpackPlugin.TWO_CPUS_FREE,
         }),
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
