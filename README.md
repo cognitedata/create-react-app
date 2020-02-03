@@ -1,3 +1,11 @@
+# DEPRECATED
+
+This package is no longer maintained in Cognite and you are urged to use the regular version of CRA.
+
+And use our template to get linting and all the nice things:
+https://github.com/cognitedata/react-demo-app
+
+
 # Create React App [![Build Status](https://dev.azure.com/facebook/create-react-app/_apis/build/status/facebook.create-react-app?branchName=master)](https://dev.azure.com/facebook/create-react-app/_build/latest?definitionId=1&branchName=master) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/facebook/create-react-app/pulls)
 
 Create React apps with no build configuration.
